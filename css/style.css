@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,400;1,500&family=Poppins:wght@100;200;300;400&display=swap');
+
 :root{
     --color-textos:#606060;
     --color-hero: ##198754;
@@ -19,7 +22,7 @@
 
 
 body{
-    font-family: 'Open Sans', sans-serif;    
+    font-family: 'Poppins', sans-serif;    
     font-size: 17px;
     color: var(--color-textos);
     line-height: 1.7;
@@ -55,6 +58,8 @@ header img{
 #hero h1{
     color: #fff;
     font-size: 60px;
+    font-family: 'Bodoni Moda', serif;    
+
 }
 
 #hero p{
@@ -97,6 +102,11 @@ header img{
     font-size: 36px;
     font-weight: 400;
     margin-bottom: 20px;
+    font-family: 'Bodoni Moda', serif;   
+    background-color: #be8559; 
+    padding: 2%;
+    color: #eee;
+
 }
 
 .subtitulo{
@@ -105,6 +115,17 @@ header img{
     font-weight: 400;
     margin-bottom: 20px; 
 }
+
+#show-case{
+    padding: 6%;
+    background-color: #c99469;
+    font-family: 'Bodoni Moda', serif;   
+    text-align: center;
+    color: #eae3cc;
+}
+
+
+
 
 #smoothie{
     background-color: seagreen;
@@ -131,6 +152,8 @@ header img{
     text-align: center;
     font-size: 14px;
     color: #be8559;
+    font-family: 'Poppins', sans-serif;    
+
 }
 
 #icons h3{
@@ -160,6 +183,8 @@ header img{
     background-position: center;
     text-align: center;
     color: #fff;
+    font-family: 'Poppins', sans-serif;    
+
 }
 
 #counter .overlay{
@@ -179,6 +204,16 @@ header img{
 
 #counter p{
     font-size: 18px;
+}
+
+#products .btn{
+    background-color: rgb(255, 177, 76);
+    padding: 20 20p;
+    color: #ffffff;
+}
+
+#products a:hover{
+    background-color: #3a3a3a;
 }
 
 #works .card{
@@ -228,10 +263,13 @@ header img{
 
 #footer-copy{
     background-color: var(--fondo-footer-copy);
-    color: var(--color-footer);
+    color: #e9dcd9;
     padding: 20px 0;
-    font-size: 13px ;
+    font-size: 15px ;
+    text-align: center;
 }
+
+
 
 #title-page{
     background-color: var(--fondo-title-page);
@@ -241,4 +279,14 @@ header img{
 
 #title-page h1{
     font-size: 25px;
+}
+
+#container .btn{
+    background-color: rgb(255, 177, 76);
+    padding: 20 20p;
+    color: #ffffff;
+    margin-top: 20;}
+
+#container a:hover{
+    background-color: #3a3a3a;
 }
