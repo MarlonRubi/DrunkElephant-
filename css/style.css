@@ -1,39 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,400;1,500&family=Poppins:wght@100;200;300;400&display=swap');
 
-:root{
-    --color-textos:#606060;
-    --color-hero: ##198754;
-    --color-negro: #000;
-    --fondo-header:#e9dcd9;
-    --color-menu: #d2d0d0;
-    --color-menu-hover: #218fe6;
-    --color-titulos: #303030;
-    --color-azul: #218fe6;
-    --fondo-gris: #f4f4f4;
-    --color-letra-gris: #888;
-    --color-subtitulo: #777;
-    --fondo-footer-columns: #f8e8b2;
-    --fondo-footer-copy: #3a3a3a;
-    --color-footer: #7a7874;
-
-}
-
-
 body{
-    font-family: 'Poppins', sans-serif;    
-    font-size: 17px;
-    color: var(--color-textos);
-    line-height: 1.7;
-    font-weight: 400;
-    line-height: 1.7;
+	font-family:'Poppins', sans-serif;
+	font-weight: 200;
 }
 
-h1,h2,h3,h4,h5,h6{
-    color: var(--color-titulos);
+header{
+	padding:1.5% 0%;
 }
-
 
 header .bg-light{
     background-color: transparent !important;
@@ -43,29 +18,33 @@ header img{
     width: 150px;
 }
 
+.navbar-nav .nav-link {
+    color: #333; /* Color del texto del enlace */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #555; /* Color del texto del enlace al pasar el cursor */
+  }
+  
+  .dropdown-menu {
+    background-color: #f8f9fa; /* Color de fondo del menú desplegable */
+  }
+  
+  .dropdown-item {
+    color: #333; /* Color del texto de las opciones del menú desplegable */
+  }
+  
+  .dropdown-item:hover {
+    background-color: #e9ecef; /* Color de fondo de la opción al pasar el cursor */
+    color: #555; /* Color del texto de la opción al pasar el cursor */
+  }
+  
+
 #hero{
     background-image: url(../img/heroooooo.jpg);
     background-size: cover;
     background-position: top center;
-}
-
-#hero h6{
-    color: #fff;
-    font-size: 24px;
-    font-weight: 600;
-}
-
-#hero h1{
-    color: #fff;
-    font-size: 60px;
-    font-family: 'Bodoni Moda', serif;    
-
-}
-
-#hero p{
-    font-size: 20px;
-    color: #eee;
-    line-height: 1.7;
+	color:#FAF4F4;
 }
 
 #hero .btn{
@@ -77,16 +56,16 @@ header img{
 
 #hero .btn-dark{
     background-color: transparent;
-    border: 2px solid #ffc75e;
+    border: 2px solid #CBD8CE;
 }
 
 #hero .btn-dark:hover{
     background-color: #fff;
-    color: var(--fondo-footer-columns);
+    color:#CBD8CE;
 }
 
 #hero .btn-light{
-    background-color: #ffc75e;
+    background-color: #CBD8CE;
 }
 
 .overlay{
@@ -94,52 +73,22 @@ header img{
     padding: 10% 0;
 }
 
-.section{
-    padding: 5% 0;
+#welcome{
+    background-color: rgb(224, 232, 227);
+    
 }
 
-.titulo{
-    font-size: 36px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    font-family: 'Bodoni Moda', serif;   
-    background-color: #be8559; 
-    padding: 2%;
-    color: #eee;
-
-}
-
-.subtitulo{
-    font-size: 18px;
-    color: var(--color-subtitulo);
-    font-weight: 400;
-    margin-bottom: 20px; 
-}
-
-#show-case{
-    padding: 6%;
-    background-color: #c99469;
-    font-family: 'Bodoni Moda', serif;   
-    text-align: center;
-    color: #eae3cc;
-}
-
-
-
-
-#smoothie{
-    background-color: seagreen;
-}
-
-#smoothie .titulo{
+#welcome .titulo{
     margin-top: 25%;
+    font-family: 'Bodoni Moda', serif;    
+
 }
 
-#smoothie ul i{
-    color: var(--color-azul)
+#welcome ul i{
+    color:#A6BDD6;
 }
 
-#smoothie ul{
+#welcome ul{
     font-size: 15px;
 }
 
@@ -148,17 +97,21 @@ header img{
 }
 
 #icons{
-    background-color: #eae3cc;
+    background-color: #CBD8CE;
     text-align: center;
     font-size: 14px;
-    color: #be8559;
-    font-family: 'Poppins', sans-serif;    
-
+    color: #111111;
+	padding:50px 0px;
 }
 
 #icons h3{
     font-size: 16px;
     margin: 15px 0;
+	font-weight: 500;
+}
+
+#welcome{
+	padding:20px 0px;
 }
 
 #icons i{
@@ -166,54 +119,19 @@ header img{
     width: 100px;
     height: 100px;
     line-height: 100px;
-    border: 1px solid #be8559;
+    border: 1px solid #CBD8CE;
     border-radius: 100%;
-    border: 1px solid #be8559;
+    border: 1px solid #111111;
     
 }
 
 #icons i:hover{
-    background-color: #d1850a;
-    color: #f3eee6;
-}
-
-#counter{
-    background-image: url(../img/less_weight_imagen_counter\ 2.jpg);
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;    
-
-}
-
-#counter .overlay{
-    background-color: rgba(234, 142, 137, 0.307);
-    padding: 7% 0;
-}
-
-#counter i{
-    font-size: 50px;
-}
-
-#counter h3{
-    font-size: 50px;
-    color: #fff;
-    margin: 15px 0;
+    background-color: #fff;
+    color: #111111;
 }
 
 #counter p{
     font-size: 18px;
-}
-
-#products .btn{
-    background-color: rgb(255, 177, 76);
-    padding: 20 20p;
-    color: #ffffff;
-}
-
-#products a:hover{
-    background-color: #3a3a3a;
 }
 
 #works .card{
@@ -227,7 +145,7 @@ header img{
 #works .card p{
     font-size: 15px;
     font-weight: 400;
-    color: var(--color-letra-gris);
+    color: #F1F0F0;
     letter-spacing: 0.3px;
 }
 
@@ -237,56 +155,121 @@ header img{
     font-size: 14px;
     padding: 20px 60px;
     letter-spacing: 0.5px;
+	background-color:#fff;
 }
 
 .btn-primary:hover{
-    background-color: var(--color-titulos);
-    border-color: var(--color-titulos);
+    background-color:#fff;
+    border-color:#DBD0EE ;
 }
 
-#footer-columns{
-    background-color: var(--fondo-footer-columns);
-    color: var(--color-footer);
-    padding: 60px 0;
-    font-size: 14px;
+.bg-purple{
+background-color:#DBD0EE;
+border-color:#DBD0EE;
 }
 
-#footer-columns img{
-    width: 180px;
-    margin-bottom: 30px;
+.bg-green{
+background-color:#CBD8CE;
+border-color:#CBD8CE;
 }
 
-#footer-columns h4{
-    color: #777;
-    font-size: 16px;
+.bg-blue{
+background-color:#A6BDD6;
+border-color:#A6BDD6;
 }
 
-#footer-copy{
-    background-color: var(--fondo-footer-copy);
-    color: #e9dcd9;
-    padding: 20px 0;
-    font-size: 15px ;
-    text-align: center;
+.bg-beige{
+background-color:#EEDED1;
+border-color:#EEDED1;
+}
+
+i{
+font-size:30px;
+}
+
+#cleanser i{
+	font-size:35px;
+	padding: 10px 0px;
+}
+
+#sections{
+	padding:10px 0px;
+}
+
+h1{
+	font-family:'Bodoni Moda', serif;
+	font-size:45px;
+	font-weight: 400;
+}
+
+h3{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 200;
+	font-size:20px;
+}
+h5{
+	font-family: 'Poppins', sans-serif;
+	font-size:16px;
+	font-weight: 300;
+}
+
+#row{
+	padding:10px 0px 30px;	
+}
+
+#row .card{
+	border-radius: 0;
+	border-color: transparent;
+}
+
+#row .card:hover{
+	background-color:#DBD0EE;
+}
+
+#row p{
+ font-weight:400;
+ font-size:16px;
+}
+
+.btn-primary{
+	color:#000;
+	text-align:center;
+	padding:20px 90px;
+}
+.btn-primary:hover{
+	color:#000;
+	background-color:#fff;
+	border-color:#DBD0EE;
+}
+
+#footer{
+	line-height:0.01;
+	padding:15px 0px 5px;
+	font-size: 20px;
+	font-weight: 300;
+}
+#map{
+	padding:50px 0px;
+}
+
+#form{
+	padding:50px 0px;
 }
 
 
 
-#title-page{
-    background-color: var(--fondo-title-page);
-    padding: 40px 0;
-    border-top: 1px solid #eee;
-}
 
-#title-page h1{
-    font-size: 25px;
-}
 
-#container .btn{
-    background-color: rgb(255, 177, 76);
-    padding: 20 20p;
-    color: #ffffff;
-    margin-top: 20;}
 
-#container a:hover{
-    background-color: #3a3a3a;
-}
+
+
+
+
+
+
+
+
+
+
+
+
